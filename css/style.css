@@ -1,0 +1,11 @@
+body {
+  margin: auto;
+}
+div.test {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+div.test>img {
+  height: 50vh;
+}
