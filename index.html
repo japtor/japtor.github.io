@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hey it's something</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <header id="header">
-      <div class="test">
-        <img src="./images/hippotrouble2.jpg" />
-      </div>
-      <div>name/blurb</div>
-    </header>
-    <nav>
-      section links
-    </nav>
-    <section id="whatItDo">
-      what I do (break/fix stuff)
-    </section>
-    <section id="trustTheProcess">
-      <header>the process</header>
-    </section>
-    <section id="caseStudies">
-      <header>case studies</header>
-      <a href="./case-study-template.html">case studies</a>
-    </section>
-    <section id="skills">
-      <header>skills?</header>
-    </section>
-    <section id="portfolioStuff">
-      <header>portfolio/random stuff</header>
-    </section>
-    <footer id="contact">
-      contact
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.5" />
+  <title>hey it's something</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- js to handle scrolling and animations -->
+  <script type="text/javascript" src="./js/smooth-scroll.js"></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+    }, false);
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="test">
+      <img src="./images/hippotrouble2.jpg" />
+    </div>
+    <div>
+      THIS IS KINDA WORKING
+    </div>
+  </header>
+
+  <nav>
+    <a href="#header">Top</a>
+    <a href="#whatItDo">What I Do</a>
+    <a href="#trustTheProcess">The Process</a>
+    <a href="#caseStudies">Case Studies</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolioStuff">Portfolio n Stuff</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="whatItDo">
+    what I do (break/fix stuff)
+  </section>
+
+  <section id="trustTheProcess">
+    <div>the process</div>
+  </section>
+
+  <section id="caseStudies">
+    <div>case studies</div>
+    <a href="./case-study-template.html">case studies</a>
+  </section>
+
+  <section id="skills">
+    <div>skills?</div>
+  </section>
+
+  <section id="portfolioStuff">
+    <div>portfolio/random stuff</div>
+  </section>
+
+  <footer id="contact">
+    contact
+  </footer>
+
+</body>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
 </html>

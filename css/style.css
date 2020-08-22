@@ -1,56 +1,66 @@
+/* this doesn't work in safari yet :(
+html {
+  scroll-behavior: smooth;
+} */
 body {
-  margin: auto 16vw;
+  margin: auto 8vw;
   text-align: center;
-  justify-content: center;
 }
 
 // garbage stuff
 div.test {
   display: flex;
 }
+
 div.test>img {
   display: block;
   width: 37vw;
-  align-content: center;
-  justify-content: flex-start;
 }
+
 #header>div:not(div.test) {
   align-content: center;
   justify-content: flex-end;
 }
 
-header:not(section>header), nav, section, footer {
+header, section, footer {
   border: 1px solid red;
   padding: 10px;
   margin: 10px;
-  height: 10em;
+  margin-top: 20px;
+  height: 50em;
 }
+
 #header {
   border: 1px solid blue;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
+
 nav {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
   position: sticky;
   top: 0;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 2px 5px black;
 }
-#whatItDo {
 
-}
-#trustTheProcess {
+#whatItDo {}
 
-}
-#caseStudies {
+#trustTheProcess {}
 
-}
-#skills {
+#caseStudies {}
 
-}
-#portfolioStuff {
+#skills {}
 
-}
-#contact {
+#portfolioStuff {}
 
-}
+#contact {}
+
 section>header {
   font-weight: bolder;
 }
