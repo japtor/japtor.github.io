@@ -1,11 +1,56 @@
 body {
-  margin: auto;
-}
-div.test {
-  display: flex;
-  margin: auto;
+  margin: auto 16vw;
+  text-align: center;
   justify-content: center;
 }
+
+// garbage stuff
+div.test {
+  display: flex;
+}
 div.test>img {
-  height: 50vh;
+  display: block;
+  width: 37vw;
+  align-content: center;
+  justify-content: flex-start;
+}
+#header>div:not(div.test) {
+  align-content: center;
+  justify-content: flex-end;
+}
+
+header:not(section>header), nav, section, footer {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+  height: 10em;
+}
+#header {
+  border: 1px solid blue;
+  height: auto;
+}
+nav {
+  position: sticky;
+  top: 0;
+}
+#whatItDo {
+
+}
+#trustTheProcess {
+
+}
+#caseStudies {
+
+}
+#skills {
+
+}
+#portfolioStuff {
+
+}
+#contact {
+
+}
+section>header {
+  font-weight: bolder;
 }
