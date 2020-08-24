@@ -5,8 +5,12 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>hey it's something</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <!-- js to handle scrolling and animations -->
+  <!-- js to handle smooth scrolling in all browsers until safari supports css smooth scroll -->
   <script type="text/javascript" src="./js/smooth-scroll.js"></script>
+  <!-- js to get page scroll percentage to pull off animating on scroll position, based on:
+    https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
+    https://codepen.io/scottkellum/pen/WWeXab
+  -->
   <script>
     window.addEventListener('scroll', () => {
       document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
@@ -17,13 +21,14 @@
 <body>
   <header id="about">
     <div>
-      <p>HELLO</p>
-      <p>I AM</p>
-      <p>BRIAN KIM</p>
+      <h1>HELLO</h1>
+      <h1>I AM</h1>
+      <h1>BRIAN KIM</h1>
+      <p>And this is under construction</p>
+      <p>(Hey at least the code is clean...ish)</p>
     </div>
     <div>
-      OBVIOUSLY A PLACEHOLDER.
-      <img src="./images/hippotrouble2.jpg" />
+      <img src="./images/hippotrouble2.jpg" /><br />...obviously a placeholder
     </div>
   </header>
 
@@ -40,27 +45,28 @@
   <section id="whatItDo">
     <header>What I Do</header>
     <div class="content">
+      <!-- break/find/fix - leftover class names from trying grid template areas first -->
       <div class="break">
-        <div class="imgBox"></div>
-        <div>I like to break stuff</div>
+        <div class="imgBox">(in theory these three boxes would instead be one box with a be a three part animation based on scroll position)</div>
+        <div class="caption">I like to break stuff</div>
       </div>
       <div class="find">
-        <div class="imgBox"></div>
-        <div>find problems</div>
+        <div class="imgBox">(trying too much? probably)</div>
+        <div class="caption">find problems</div>
       </div>
       <div class="fix">
-        <div class="imgBox"></div>
-        <div>and fix them!</div>
+        <div class="imgBox">(but the code foundations are getting in place)</div>
+        <div class="caption">and fix them!</div>
       </div>
     </div>
   </section>
 
   <section id="trustTheProcess">
-    <header>the process</header>
+    <header>The Process</header>
     <div class="content">
       <div class="research">
         <div class="imgBox"></div>
-        <div>Research</div>
+        <div class="caption">Research</div>
       </div>
       <div class="blank"></div>
       <div class="blank"></div>
@@ -68,7 +74,7 @@
       <div class="blank"></div>
       <div class="iteate">
         <div class="imgBox"></div>
-        <div>Ideate</div>
+        <div class="caption">Ideate</div>
       </div>
       <div class="blank"></div>
       <div class="blank"></div>
@@ -76,7 +82,7 @@
       <div class="blank"></div>
       <div class="iterate">
         <div class="imgBox"></div>
-        <div>Iterate</div>
+        <div class="caption">Iterate</div>
       </div>
       <div class="blank"></div>
       <div class="blank"></div>
@@ -84,18 +90,97 @@
       <div class="blank"></div>
       <div class="boom">
         <div class="imgBox"></div>
-        <div>BOOM!</div>
+        <div class="caption">BOOM!</div>
       </div>
     </div>
   </section>
 
   <section id="caseStudies">
-    <header>case studies</header>
-    <a href="./case-study-template.html">case studies</a>
+    <header>Case Studies</header>
+    <div class="content">
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">
+            <div>Travel Party!<br /><br />(logo)</div>
+          </a>
+        </div>
+        <div class="caption">
+          Wayfarers franzen street art, vegan flexitarian swag gentrify artisan portland single-origin coffee. Marfa flexitarian ennui everyday carry hoodie. Deep v glossier subway tile tumblr.
+        </div>
+        <!-- Hipster Ipsum: https://hipsum.co -->
+      </div>
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">Zoom Groom<br /><br />(logo)</a>
+        </div>
+        <div class="caption">
+          Shibe woofer very hand that feed shibe pats such treat much ruin diet, boofers smol borking doggo with a long snoot for pats very good spot many pats.
+        </div>
+        <!-- Doggo Ipsum: https://doggoipsum.com -->
+      </div>
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">FCC Redesign<br /><br />(logo)</a>
+        </div>
+        <div class="caption">
+          And then, a journey into tomorrow, a journey to another planet, a manned mission to mars. arithmetic, geometry, optics, geodesy, mechanics, and whatever others, all offer themselves in its service.
+        </div>
+        <!-- Space Quotes Ipsum: https://panipsum.com/generate/?wl%5B%5D=100&p=3 -->
+      </div>
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">Non-Profit Redesign: Angel Cat Pet Adoptions<br /><br />(logo)</a>
+        </div>
+        <div class="caption">
+          Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped up on goofballs hunt anything that moves, sweet beast under the bed.
+        </div>
+        <!-- Cat Ipsum: https://fungenerators.com/lorem-ipsum/cat/ -->
+      </div>
+    </div>
   </section>
 
   <section id="skills">
     <header>Skills</header>
+    <div class="content">
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">
+            <div>Travel Party!<br /><br />(logo)</div>
+          </a>
+        </div>
+        <div class="caption">
+          Wayfarers franzen street art, vegan flexitarian swag gentrify artisan portland single-origin coffee. Marfa flexitarian ennui everyday carry hoodie. Deep v glossier subway tile tumblr.
+        </div>
+        <!-- Hipster Ipsum: https://hipsum.co -->
+      </div>
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">Zoom Groom<br /><br />(logo)</a>
+        </div>
+        <div class="caption">
+          Shibe woofer very hand that feed shibe pats such treat much ruin diet, boofers smol borking doggo with a long snoot for pats very good spot many pats.
+        </div>
+        <!-- Doggo Ipsum: https://doggoipsum.com -->
+      </div>
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">FCC Redesign<br /><br />(logo)</a>
+        </div>
+        <div class="caption">
+          And then, a journey into tomorrow, a journey to another planet, a manned mission to mars. arithmetic, geometry, optics, geodesy, mechanics, and whatever others, all offer themselves in its service.
+        </div>
+        <!-- Space Quotes Ipsum: https://panipsum.com/generate/?wl%5B%5D=100&p=3 -->
+      </div>
+      <div>
+        <div class="imgBox">
+          <a href="./case-study-template.html">Non-Profit Redesign: Angel Cat Pet Adoptions<br /><br />(logo)</a>
+        </div>
+        <div class="caption">
+          Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped up on goofballs hunt anything that moves, sweet beast under the bed.
+        </div>
+        <!-- Cat Ipsum: https://fungenerators.com/lorem-ipsum/cat/ -->
+      </div>
+    </div>
   </section>
 
   <section id="portfolioStuff">
