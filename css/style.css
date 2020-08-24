@@ -1,57 +1,103 @@
+/* junk just to check outlines */
+section, footer, img, #about>div {
+  border: 1px solid red;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+
 /* this doesn't work in safari yet :(
 html {
   scroll-behavior: smooth;
 } */
 body {
-  margin: auto 8vw;
+  width: 80vw;
+  margin: auto;
   text-align: center;
-}
-
-// garbage stuff
-div.test {
   display: flex;
-}
-
-div.test>img {
-  display: block;
-  width: 37vw;
-}
-
-#header>div:not(div.test) {
-  align-content: center;
+  flex-direction: column;
   justify-content: center;
+  font-family: sans-serif;
+  /*  transition: all 0.5 ease-out; universal animation timing */
 }
 
-header, section, footer {
-  border: 1px solid red;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 20px;
-  height: 50em;
-}
-
-#header {
+/* header section */
+#about {
   border: 1px solid blue;
   height: auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
+#about>div img, #about>div p {
+  width: 30vw;
+}
+
+/* nav stuff */
 nav {
+  width: 100%;
+  padding: 1em 0;
   border: 1px solid red;
-  padding: 10px;
-  margin: 10px;
   position: sticky;
   top: 0;
   height: auto;
   background-color: white;
   box-shadow: 0 2px 5px black;
+  display: flex;
+  justify-content: space-around;
 }
 
+/* end of global items above */
+/* what i do stuff */
 #whatItDo {}
 
+#whatItDo>.content {
+  display: flex;
+  flex-direction: column;
+}
+
+#whatItDo>.content>div {
+  padding: 1em;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#whatItDo .imgBox {
+  border: 1px solid orange;
+  height: 20vw;
+  width: 60vw;
+}
+
 #trustTheProcess {}
+
+#trustTheProcess>.content {
+  display: grid;
+  grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+  grid-template-areas:
+    "research blank blank blank"
+    "blank ideate blank blank"
+    "blank blank iterate blank"
+    "blank blank blank boom";
+}
+
+#trustTheProcess>.content>div {
+  padding: 1em;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#trustTheProcess .imgBox {
+  border: 1px solid orange;
+  height: 15vw;
+  width: 15vw;
+}
 
 #caseStudies {}
 
@@ -61,6 +107,9 @@ nav {
 
 #contact {}
 
-section>header {
+nav>a, section>header, footer>header {
+  text-decoration: none;
   font-weight: bolder;
+  font-size: 1.1em;
+  font-variant-caps: all-small-caps;
 }
