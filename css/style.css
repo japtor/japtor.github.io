@@ -1,15 +1,13 @@
-/* junk just to check outlines */
+/* junk mostly to check outlines */
 #about, section, footer, img, #about>div, nav {
   border: 1px solid red;
-  padding: 1em 0;
-  margin: 1em 0;
 }
-#whatItDo>.content>div, #trustTheProcess>.content>div, #whatItDo .imgBox, #trustTheProcess .imgBox, #caseStudies .imgBox, #caseStudies .caption {
-border: 1px solid orange;
+
+.content>div, div, .imgBox, .caption {
+  border: 1px solid pink;
 }
 
 /* end of outline junk */
-
 /* global definitions */
 /* this doesn't work in safari yet :(
 html {
@@ -25,12 +23,19 @@ body {
   font-family: sans-serif;
   /*  transition: all 0.5 ease-out; universal animation timing */
 }
+
+#about, section, footer, img, #about>div, nav {
+  padding: 1em 0;
+  margin: 1em 0;
+}
+
 nav>a, section>header, footer>header {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.1em;
   font-variant-caps: all-small-caps;
 }
+
 .caption {
   padding: 1em;
 }
@@ -54,13 +59,12 @@ nav {
   top: 0;
   height: auto;
   background-color: white;
-/*  box-shadow: 0 2px 5px black; */
+  /*  box-shadow: 0 2px 5px black; */
   display: flex;
   justify-content: space-around;
 }
 
 /* end of global items above */
-
 /* what i do stuff */
 #whatItDo {}
 
@@ -86,12 +90,24 @@ nav {
 
 #trustTheProcess>.content {
   display: grid;
+  grid-gap: 1em;
   grid-template: repeat(4, 1fr)/repeat(4, 1fr);
-  grid-template-areas:
-    "research blank blank blank"
-    "blank ideate blank blank"
-    "blank blank iterate blank"
-    "blank blank blank boom";
+}
+
+#research {
+  grid-area: 1/1;
+}
+
+#ideate {
+  grid-area: 2/2;
+}
+
+#iterate {
+  grid-area: 3/3;
+}
+
+#boom {
+  grid-area: 4/4;
 }
 
 #trustTheProcess>.content>div {
@@ -115,19 +131,23 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
 #caseStudies>.content>div {
   display: flex;
   align-items: center;
   padding: 1em;
 }
+
 #caseStudies>.content>div:nth-child(odd) {
   flex-direction: row;
   text-align: left;
 }
+
 #caseStudies>.content>div:nth-child(even) {
   flex-direction: row-reverse;
   text-align: right;
 }
+
 #caseStudies .imgBox {
   height: 15vw;
   width: 15vw;
@@ -137,6 +157,7 @@ nav {
   justify-content: center;
   text-align: center;
 }
+
 #caseStudies .caption {
   width: 32vw;
   margin: 1em;
@@ -144,6 +165,41 @@ nav {
 
 /* skills */
 #skills {}
+
+#skills>.content {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#skills>.content>div {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+#skills>.content>div:nth-child(odd) {
+  flex-direction: row;
+  text-align: left;
+}
+
+#skills .imgBox {
+  height: 3em;
+  width: 3em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#skills .caption {
+  width: 15vw;
+  margin: 1em;
+}
 
 /* portfolio */
 #portfolioStuff {}
