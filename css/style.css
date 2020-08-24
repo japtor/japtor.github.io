@@ -56,7 +56,7 @@ nav>a, section>header, footer>header {
 /* nav stuff */
 nav {
   position: sticky;
-  top: 0;
+  top: 1em;
   height: auto;
   background-color: white;
   /*  box-shadow: 0 2px 5px black; */
@@ -172,16 +172,13 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #skills>.content>div {
   display: flex;
   align-items: center;
   padding: 1em;
-}
-
-#skills>.content>div:nth-child(odd) {
   flex-direction: row;
   text-align: left;
 }
@@ -203,6 +200,34 @@ nav {
 
 /* portfolio */
 #portfolioStuff {}
+
+#portfolioStuff>.content {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#portfolioStuff>.content>div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5em;
+}
+
+#portfolioStuff .imgBox {
+  height: 14em;
+  width: 14em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolioStuff .caption {
+  width: 12em;
+  margin-top: -3.5em;
+}
 
 /* footer/contact */
 #contact {}

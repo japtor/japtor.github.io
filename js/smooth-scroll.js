@@ -17,8 +17,8 @@
 		topOnEmptyHash: true,
 
 		// Speed & Duration
-		speed: 1000,
-		speedAsDuration: true,
+		speed: 500,
+		speedAsDuration: false,
 		durationMax: null,
 		durationMin: null,
 		clip: true,
