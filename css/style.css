@@ -235,5 +235,20 @@ padding: 1em;
   margin-top: -3.5em;
 }
 
-/* footer/contact */
-#contact {}
+/* footer/connect */
+#connect {}
+
+#connect .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 60em;
+}
+#connect .subChunk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  width: 5em;
+}
