@@ -1,11 +1,14 @@
 /* junk mostly to check outlines */
 #about, section, footer, img, #about>div, nav {
-  border: 1px solid red;
+  border: 1px solid rgba(204, 204, 255, 0.5);
+  background-color: rgba(204, 204, 255, 0.1);
 }
 
 .content>div, div, .imgBox, .caption {
-  border: 1px solid pink;
+  border: 1px solid rgba(204, 204, 255, 0.5);
+  background-color: rgba(204, 204, 255, 0.1);
 }
+
 
 /* end of outline junk */
 /* global definitions */
@@ -29,11 +32,14 @@ body {
   margin: 1em 0;
 }
 
-nav>a, section>header, footer>header {
+a, section>header, footer>header {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.1em;
   font-variant-caps: all-small-caps;
+}
+a {
+  color: rgba(64, 64, 192, 0.8)
 }
 
 .caption {
@@ -58,7 +64,6 @@ nav {
   position: sticky;
   top: 1em;
   height: auto;
-  background-color: white;
   /*  box-shadow: 0 2px 5px black; */
   display: flex;
   justify-content: space-around;
