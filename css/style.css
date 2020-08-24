@@ -4,11 +4,10 @@
   background-color: rgba(204, 204, 255, 0.1);
 }
 
-.content>div, div, .imgBox, .caption {
+.subChunk, div, .imgBox, .caption {
   border: 1px solid rgba(204, 204, 255, 0.5);
   background-color: rgba(204, 204, 255, 0.1);
 }
-
 
 /* end of outline junk */
 /* global definitions */
@@ -38,6 +37,7 @@ a, section>header, footer>header {
   font-size: 1.1em;
   font-variant-caps: all-small-caps;
 }
+
 a {
   color: rgba(64, 64, 192, 0.8)
 }
@@ -78,7 +78,7 @@ nav {
   flex-direction: column;
 }
 
-#whatItDo>.content>div {
+#whatItDo .subChunk {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +87,7 @@ nav {
 
 #whatItDo .imgBox {
   height: 20vw;
-  width: 60vw;
+  /*  width: 70vw; unnecessary? */
 }
 
 /* process stuff */
@@ -95,7 +95,7 @@ nav {
 
 #trustTheProcess>.content {
   display: grid;
-  grid-gap: 1em;
+  /*  grid-gap: 1em; unnecessary? */
   grid-template: repeat(4, 1fr)/repeat(4, 1fr);
 }
 
@@ -115,7 +115,7 @@ nav {
   grid-area: 4/4;
 }
 
-#trustTheProcess>.content>div {
+#trustTheProcess .subChunk {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,39 +123,40 @@ nav {
 }
 
 #trustTheProcess .imgBox {
-  height: 15vw;
-  width: 15vw;
+  padding-top: calc(100% - 2em);
+  width: 100%;
 }
 
 /* case studies */
 #caseStudies {}
 
 #caseStudies>.content {
-  width: 70vw;
+  max-width: 60em;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-#caseStudies>.content>div {
+#caseStudies .subChunk {
   display: flex;
   align-items: center;
-  padding: 1em;
+  padding: 1em 0;
+  height: 100%;
 }
 
-#caseStudies>.content>div:nth-child(odd) {
+#caseStudies .subChunk:nth-child(odd) {
   flex-direction: row;
   text-align: left;
 }
 
-#caseStudies>.content>div:nth-child(even) {
+#caseStudies .subChunk:nth-child(even) {
   flex-direction: row-reverse;
   text-align: right;
 }
 
 #caseStudies .imgBox {
-  height: 15vw;
-  width: 15vw;
+  height: 100%;
+  width: 20%;
   margin: 1em;
   display: flex;
   align-items: center;
@@ -164,7 +165,7 @@ nav {
 }
 
 #caseStudies .caption {
-  width: 32vw;
+  width: 55%;
   margin: 1em;
 }
 
@@ -172,35 +173,33 @@ nav {
 #skills {}
 
 #skills>.content {
-  width: 70vw;
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  max-width: 60em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
-#skills>.content>div {
-  display: flex;
-  align-items: center;
+#skills .subChunk {
+  margin: 1em;
   padding: 1em;
+  width: calc(100% - 8em);
+  justify-content: center;
+  display: flex;
   flex-direction: row;
   text-align: left;
 }
 
 #skills .imgBox {
-  height: 3em;
-  width: 3em;
-  margin: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1em;
 }
 
 #skills .caption {
-  width: 15vw;
-  margin: 1em;
+padding: 1em;
 }
 
 /* portfolio */
@@ -214,23 +213,25 @@ nav {
   justify-content: space-around;
 }
 
-#portfolioStuff>.content>div {
+#portfolioStuff .subChunk {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0.5em;
+  margin: 1em;
+  width: calc(33% - 2em);
 }
 
 #portfolioStuff .imgBox {
-  height: 14em;
-  width: 14em;
+  padding-top: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #portfolioStuff .caption {
-  width: 12em;
+  width: 100%;
+  padding: 1em 0;
   margin-top: -3.5em;
 }
 
