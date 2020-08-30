@@ -11,6 +11,7 @@
 
 /* end of outline junk */
 /* global definitions */
+
 /* this doesn't work in safari yet :(
 html {
   scroll-behavior: smooth;
@@ -29,6 +30,10 @@ body {
 #about, section, footer, img, #about>div, nav {
   padding: 1em 0;
   margin: 1em 0;
+}
+
+.sectionChunk {
+
 }
 
 a, section>header, footer>header {
