@@ -216,11 +216,13 @@ nav>a {
 #caseStudies .subChunk:nth-child(odd) {
   align-items: flex-start;
   text-align: left;
+  padding-right: 10vw;
 }
 
 #caseStudies .subChunk:nth-child(even) {
   align-items: flex-end;
   text-align: right;
+  padding-left: 10vw;
 }
 
 #caseStudies .imgBox {
