@@ -58,14 +58,13 @@ body {
   }
 }
 
-#about, section, footer, img, #about>div, nav {
+#about, section, footer, img, #about>div {
   padding: 1em 0;
   margin: 1em 0;
 }
 
 #about, nav, footer, .sectionChunk {
-  width: 80%;
-  max-width: 80em;
+  width: calc(100% - 2em);
   margin: 1em auto;
 }
 
@@ -94,22 +93,31 @@ a {
 }
 
 #about>div img, #about>div p {
-  width: calc(40vw - 2em);
+  width: calc(50vw - 2em);
 }
 
 /* nav stuff */
 nav {
   position: sticky;
   top: 1em;
+  bottom: 1em;
   height: auto;
   /*  box-shadow: 0 2px 5px black; */
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.miniOnly {
-  display: none;
+nav>a {
+  padding: .5em 1em;
+  min-width: calc(33% - 4em);
 }
+
+#bigNav {
+  /*  display: none; */
+}
+
+.miniOnly {}
 
 /* end of global items above */
 /* what i do stuff */
@@ -136,9 +144,8 @@ nav {
 #trustTheProcess {}
 
 #trustTheProcess>.content {
-  display: grid;
-  /*  grid-gap: 1em; unnecessary? */
-  grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
 }
 
 #research {
@@ -173,14 +180,6 @@ nav {
   grid-area: 4/2/4/4;
 }
 
-#researchText, #ideateText {
-  text-align: left;
-}
-
-#iterateText, #boomText {
-  text-align: right;
-}
-
 #trustTheProcess .subChunk {
   display: flex;
   flex-direction: column;
@@ -189,8 +188,8 @@ nav {
 }
 
 #trustTheProcess .imgBox {
-  padding-top: calc(100% - 2em);
-  width: 100%;
+  padding-top: calc(50% - 2em);
+  width: 50%;
 }
 
 #trustTheProcess .description {
@@ -201,7 +200,6 @@ nav {
 #caseStudies {}
 
 #caseStudies>.content {
-  max-width: 60em;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -209,35 +207,45 @@ nav {
 
 #caseStudies .subChunk {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 1em 0;
+  padding: 0;
   height: 100%;
 }
 
 #caseStudies .subChunk:nth-child(odd) {
-  flex-direction: row;
+  align-items: flex-start;
   text-align: left;
 }
 
 #caseStudies .subChunk:nth-child(even) {
-  flex-direction: row-reverse;
+  align-items: flex-end;
   text-align: right;
 }
 
 #caseStudies .imgBox {
-  height: 8em;
-  width: 20%;
-  margin: 1em;
+  height: 4em;
+  width: auto;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  flex-direction: column;
+}
+
+#caseStudies .subChunk:nth-child(odd) .imgBox {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+#caseStudies .subChunk:nth-child(even) .imgBox {
+  flex-direction: row;
+  text-align: right;
 }
 
 #caseStudies .caption {
-  width: 55%;
-  margin: 1em;
+  width: auto;
+  margin: 0;
 }
 
 /* skills */
@@ -246,14 +254,11 @@ nav {
 #skills>.content {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+  grid-template-columns: 1fr;
   justify-items: center;
 }
 
 #skills .subChunk {
-  margin: 1em;
-  padding: 1em;
-  width: calc(100% - 8em);
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -265,10 +270,12 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 1em;
   padding: 1em;
 }
 
 #skills .caption {
+  margin: 1em;
   padding: 1em;
 }
 
@@ -310,15 +317,15 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
-  max-width: 60em;
+  flex-wrap: wrap;
 }
 
 #connect .subChunk {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5em;
-  width: 5em;
+  height: 2.5em;
+  width: 100%;
 }
 
 /* footer */
