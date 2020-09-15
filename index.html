@@ -2,10 +2,23 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178017279-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178017279-1');
+  </script>
+
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>hey it's something</title>
-  <link rel="stylesheet" media='screen and (max-width: 639px)' href="./css/mini.css"/>
-  <link rel="stylesheet" media='screen and (min-width: 640px)' href="./css/style.css"/>
+  <link rel="stylesheet" media='screen and (max-width: 639px)' href="./css/mini.css" />
+  <link rel="stylesheet" media='screen and (min-width: 640px)' href="./css/style.css" />
   <!-- js to handle smooth scrolling in all browsers until safari supports css smooth scroll -->
   <script type="text/javascript" src="./js/smooth-scroll.js"></script>
 </head>
@@ -26,7 +39,8 @@
       <p>...obviously a placeholder<br />(as are the colors/borders)</p>
     </div>
   </header>
-  <p style="width: 50%; margin: auto; padding: 1em;">how to break this nav down for mobile? change whole page to hidden/expanding sections? iconized section menu<br /><br />update! figured out a way...but can't get the damn basic click js working :(<br />(collapse nav into single bar that expands, and changes w/sections on scroll)</p>
+  <p style="width: 50%; margin: auto; padding: 1em;">how to break this nav down for mobile? change whole page to hidden/expanding sections? iconized section menu<br /><br />update! figured out a way...but can't get the damn basic click js working
+    :(<br />(collapse nav into single bar that expands, and changes w/sections on scroll)</p>
   <p style="width: 50%; margin: auto; padding: 1em;">full page color swipe/background per section?</p>
   <p style="width: 50%; margin: auto; padding: 1em;">smooth scroll js: separate js link media query to handle different height padding in mobile?</p>
   <nav id="menuReveal" class="miniOnly">
@@ -76,28 +90,32 @@
         <div class="caption">Research</div>
       </div>
       <div id="researchText" class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia pellentesque.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia
+        pellentesque.
       </div>
       <div id="ideate" class="subChunk">
         <div class="imgBox"></div>
         <div class="caption">Ideate</div>
       </div>
       <div id="ideateText" class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia pellentesque.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia
+        pellentesque.
       </div>
       <div id="iterate" class="subChunk">
         <div class="imgBox"></div>
         <div class="caption">Iterate</div>
       </div>
       <div id="iterateText" class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia pellentesque.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia
+        pellentesque.
       </div>
       <div id="boom" class="subChunk">
         <div class="imgBox"></div>
         <div class="caption">BOOM!</div>
       </div>
       <div id="boomText" class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia pellentesque.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum gravida sapien, suscipit accumsan magna commodo sagittis. Fusce tristique finibus finibus. Sed consectetur dolor ac tortor cursus varius. Maecenas non diam a diam lacinia
+        pellentesque.
       </div>
     </div>
   </section>
@@ -221,7 +239,8 @@
 
   <section class="sectionChunk" id="portfolioStuff">
     <header>Portfolio n Stuff</header>
-    <p style="width: 50%; margin: auto; padding: 1em;">(change to more flexible layout, auto wrap grid (auto columns)? flexbox? some kind of flexible layout/different sizes possible?)<br /><br />(mostly done. haven't figured out complex/auto multi shape boxes)</p>
+    <p style="width: 50%; margin: auto; padding: 1em;">(change to more flexible layout, auto wrap grid (auto columns)? flexbox? some kind of flexible layout/different sizes possible?)<br /><br />(mostly done. haven't figured out complex/auto multi
+      shape boxes)</p>
 
     <div class="content">
       <div class="subChunk">
@@ -323,4 +342,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/stuff.js"></script>
 </body>
+
 </html>
