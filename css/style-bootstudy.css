@@ -1,0 +1,331 @@
+/* junk mostly to check outlines */
+#about, section, footer, img, #about>div, nav {
+  border: 1px solid rgba(204, 204, 255, 0.5);
+  background-color: rgba(204, 204, 255, 0.1);
+}
+
+.subChunk, div, .imgBox, .caption {
+  border: 1px solid rgba(204, 204, 255, 0.5);
+  background-color: rgba(204, 204, 255, 0.1);
+}
+
+p {
+  font-size: smaller;
+  font-style: italic;
+}
+
+/* end of outline junk */
+/* global definitions */
+/* this doesn't work in safari yet :(
+html {
+  scroll-behavior: smooth;
+} */
+body {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  background-color: white;
+  /*  animation: colorChange linear 5s infinite; */
+  /*  transition: all 0.5 ease-out; universal animation timing */
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: white;
+  }
+
+  20% {
+    background-color: red;
+  }
+
+  40% {
+    background-color: blue;
+  }
+
+  60% {
+    background-color: black;
+  }
+
+  80% {
+    background-color: green;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+#about, section, footer, img, #about>div, nav {
+  padding: 1em 0;
+  margin: 1em 0;
+}
+
+#about, nav, footer, .sectionChunk {
+  width: 80%;
+  max-width: 80em;
+  margin: 1em auto;
+}
+
+a, section>header, footer>header {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.1em;
+  font-variant-caps: all-small-caps;
+}
+
+a {
+  color: rgba(64, 64, 192, 0.8)
+}
+
+.caption {
+  padding: 1em;
+}
+
+/* header section */
+#titleHeader {
+  font-size: 72px;
+  font-weight: bold;
+}
+#about {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#about>div img, #about>div p {
+  width: calc(40vw - 2em);
+}
+
+/* nav stuff */
+nav {
+  position: sticky;
+  top: 1em;
+  height: auto;
+  /*  box-shadow: 0 2px 5px black; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.miniOnly {
+  display: none;
+}
+
+/* end of global items above */
+/* what i do stuff */
+#whatItDo {}
+
+#whatItDo>.content {
+  display: flex;
+  flex-direction: column;
+}
+
+#whatItDo .subChunk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#whatItDo .imgBox {
+  height: 20vw;
+  /*  width: 70vw; unnecessary? */
+}
+
+/* process stuff */
+#trustTheProcess {}
+
+#trustTheProcess>.content {
+  display: grid;
+  /*  grid-gap: 1em; unnecessary? */
+  grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+}
+
+#research {
+  grid-area: 1/1;
+}
+
+#researchText {
+  grid-area: 1/2/1/4;
+}
+
+#ideate {
+  grid-area: 2/2;
+}
+
+#ideateText {
+  grid-area: 2/3/2/5;
+}
+
+#iterate {
+  grid-area: 3/3;
+}
+
+#iterateText {
+  grid-area: 3/1/3/3;
+}
+
+#boom {
+  grid-area: 4/4;
+}
+
+#boomText {
+  grid-area: 4/2/4/4;
+}
+
+#researchText, #ideateText {
+  text-align: left;
+}
+
+#iterateText, #boomText {
+  text-align: right;
+}
+
+#trustTheProcess .subChunk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#trustTheProcess .imgBox {
+  padding-top: calc(100% - 2em);
+  width: 100%;
+}
+
+#trustTheProcess .description {
+  padding: 1em;
+}
+
+/* case studies */
+#caseStudies {}
+
+#caseStudies>.content {
+  max-width: 60em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#caseStudies .subChunk {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+  height: 100%;
+}
+
+#caseStudies .subChunk:nth-child(odd) {
+  flex-direction: row;
+  text-align: left;
+}
+
+#caseStudies .subChunk:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+#caseStudies .imgBox {
+  height: 8em;
+  width: 20%;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+
+#caseStudies .caption {
+  width: 55%;
+  margin: 1em;
+}
+
+/* skills */
+#skills {}
+
+#skills>.content {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+  justify-items: center;
+}
+
+#skills .subChunk {
+  margin: 1em;
+  padding: 1em;
+  width: calc(100% - 8em);
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+#skills .imgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+#skills .caption {
+  padding: 1em;
+}
+
+/* portfolio */
+#portfolioStuff {}
+
+#portfolioStuff>.content {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
+
+#portfolioStuff .subChunk {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+
+#portfolioStuff .imgBox {
+  padding-top: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolioStuff .caption {
+  width: 100%;
+  padding: 1em 0;
+  margin-top: -3.5em;
+}
+
+/* connect */
+#connect {}
+
+#connect .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 60em;
+}
+
+#connect .subChunk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  width: 5em;
+}
+
+/* footer */
+footer>div img {
+  width: 100%;
+}
