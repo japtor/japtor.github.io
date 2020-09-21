@@ -36,7 +36,7 @@ body {
 }
 
 
-a, section>header, footer>header {
+a, section>header, footer>header, div.container header {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.1em;
@@ -46,15 +46,34 @@ a, section>header, footer>header {
 a {
   color: rgba(64, 64, 192, 0.8)
 }
-
+a.navbar-brand img {
+  width: 2.5rem;
+}
 
 /* header section */
 #titleHeader {
   font-size: 128px;
   font-weight: bold;
 }
-/* nav stuff */
 
-/* end of global items above */
+.projectTitle>.container>.d-flex>.p-2:first-child {
+  min-width: 40%;
+  min-height: 10rem;
+}
+.projectTitle {
+  max-width: 50em;
+}
 
-/* what i do stuff */
+.research img {
+ min-height: 10rem;
+}
+
+.problemStatement {
+  max-width: 30em;
+}
+.problemStatement img {
+  min-height: 20rem;
+}
+.prototype {
+  width: auto;
+}
