@@ -1,0 +1,99 @@
+/*CSS also used or parentresources.html */
+
+/*text*/
+h1, h2, h3, h4, h5, h6 {font-family: 'Quicksand', sans-serif;}
+body, a, .card-subtitle, .form-group {font-family: 'Montserrat', sans-serif;}
+/*background*/
+body {
+    background-color: #F8F8F8;
+}
+/*nav*/
+/*nav*/
+.purpledivider {
+    color: #7E82F9;
+    font-weight: 700;
+    margin-right: 10px;
+}
+nav {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.wizard-logo {
+    width: 175px;
+}
+.flex-column {
+    position: fixed;
+}
+.marginbottom100 {
+    margin-bottom: 100px;
+}
+/*covid*/
+.marginleft20 {
+    margin-left: 20px;
+}
+.light {
+    font-weight: lighter;
+}
+.bold {
+    font-weight: bold;
+}
+/*footer (yes this code is garbage)*/
+#footer {
+    height: auto;
+    background-color: #7E82F9;
+    background-image: url("../images/footer-ruler.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 1rem 5% 50px 10%;
+    margin-top: 1em;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #footer h3, #footer p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  #footer p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .footerAddy {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footerAddy img {
+    height: 5rem;
+  }
+  
+  .footerAddy>div, #footerSocial {
+    padding: .5rem;
+  }
+  
+  #footerSocial {
+    text-align: center;
+  }
+  
+  #footerSocial img {
+    padding: .25rem;
+    width: 35px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }

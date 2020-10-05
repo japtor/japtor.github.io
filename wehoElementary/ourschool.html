@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/ourschool.css">
+    <title>W. Hollywood Elementary | Our School</title>
+</head>
+<body>
+<!--navigation-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="d-flex flex-grow-1">
+            <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+                <img src="images/wizard-logo-drk.png" alt="wizard logo" class="wizard-logo">
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
+                <img src="images/wizard-logo-drk-mobile.png" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="ourschool.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Our School
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#v-pills-about-tab">About</a>
+                      <a class="dropdown-item" href="#v-pills-attendance">Attendance</a>
+                      <a class="dropdown-item" href="#v-pills-calearning-tab">California Learning Standards</a>
+                      <a class="dropdown-item" href="#v-pills-covid-tab">COVID-19</a>
+                      <a class="dropdown-item" href="#v-pills-dress-tab">Dress Code and Rules</a>
+                      <a class="dropdown-item" href="#v-pills-enroll-tab">Enrollment and Registration</a>
+                      <a class="dropdown-item" href="#v-pills-parking-tab">Parking</a>
+                      <a class="dropdown-item" href="#v-pills-staff-tab">Teachers and Staff</a>  
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Programs
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">COVID-19 Challenges</a>
+                        <a class="dropdown-item" href="#">Gardening</a>
+                        <a class="dropdown-item" href="#">GATE/SPED</a>
+                        <a class="dropdown-item" href="#">Music</a>
+                        <a class="dropdown-item" href="#">Physical Education</a>
+                        <a class="dropdown-item" href="#">Visual Arts</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="parentresources.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Parent Resources
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Common Core</a>
+                        <a class="dropdown-item" href="#">Friends of WHE</a>
+                        <a class="dropdown-item" href="#">News and Alerts</a>
+                        <a class="dropdown-item" href="#">Parent Portal</a>
+                        <a class="dropdown-item" href="#">Principal’s Newsletter</a>
+                        <a class="dropdown-item" href="#">School Site Council</a>
+                        <a class="dropdown-item" href="learninghub.html">Virtual Learning Hub</a>
+                      </div>
+                    </li>
+            </ul>
+        </div>
+        <div class="purpledivider">
+            |
+        </div>
+        <!--calendar icon-->
+        <a class="navbar-brand" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+          </svg> 
+        </a>
+        <!--search icon-->
+        <a class="navbar-brand" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+        </svg> 
+        </a>
+</nav>
+<!--breadcrumbs-->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Our School</li>
+    </ol>
+  </nav>
+<!--body columns 2 & 10-->
+<!--col 2: vertical nav-->
+<div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-about" role="tab" aria-controls="v-pills-about" aria-selected="true">About</a>
+            <a class="nav-link" id="v-pills-attendance-tab" data-toggle="pill" href="#v-pills-attendance" role="tab" aria-controls="v-pills-attendance" aria-selected="false">Attendance</a>
+            <a class="nav-link" id="v-pills-calearning-tab" data-toggle="pill" href="#v-pills-calearning" role="tab" aria-controls="v-pills-calearning" aria-selected="false">CA Learning Standards</a>
+            <a class="nav-link" id="v-pills-covid-tab" data-toggle="pill" href="#v-pills-covid" role="tab" aria-controls="v-pills-covid" aria-selected="false">Covid-19</a>
+            <a class="nav-link" id="v-pills-dress-tab" data-toggle="pill" href="#v-pills-dress" role="tab" aria-controls="v-pills-dress" aria-selected="false">Dress Code & Rules</a>
+            <a class="nav-link" id="v-pills-enroll-tab" data-toggle="pill" href="#v-pills-enroll" role="tab" aria-controls="v-pills-enroll" aria-selected="false">Enrollment & Registration</a>
+            <a class="nav-link" id="v-pills-parking-tab" data-toggle="pill" href="#v-pills-parking" role="tab" aria-controls="v-pills-parking" aria-selected="false">Parking</a>
+            <a class="nav-link" id="v-pills-staff-tab" data-toggle="pill" href="#v-pills-staff" role="tab" aria-controls="v-pills-staff" aria-selected="false">Teachers & Staff</a>
+          </div>
+      </div>
+      <!--col 10-->
+      <div class="col-md-9">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">
+                <h3>About</h3><br>
+                <p>
+                    Like the town of West Hollywood, West Hollywood Elementary is inextricably linked to Moses Sherman, founder of Los Angeles’ first electrified street cars and developer of the railroad town of Sherman (1897). Although, there are records indicating that there was a school on the sight as early as the 1880’s when the area was farm lands, the earliest known photos and news articles are when Moses developed Sherman and built a new school for the railroad workers’ children.<br><br>
+
+                    Situated on the sunny slope of Clark Street (San Vicente) students and teachers walked up the hill to the little wooden school house known as The Sherman School.<br><br>
+                        
+                    In 1910 the school was annexed by LAUSD and in 1925 the current structure facing Hammond was built. Around this time, the city of Sherman returned to unincorporated county status and in 1929, the school’s name officially changed to West Hollywood Elementary. From farm lands to railroads to Sunset Strip – to now—West Hollywood Elementary has the rare distinction of being one of the few LAUSD schools to generate students every year for over 100 years! 
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-attendance" role="tabpanel" aria-labelledby="v-pills-attendance-tab">
+                <h3>Attendance</h3><br>
+                <h5>The Law</h5><br>
+                <p> 
+                    All students between the ages of 6 and 18 must attend school daily. Parents or guardians are responsible for sending their children to school (E.C. 48200).<br><br>
+                <h5>Role Of Student</h5><br>
+                    A student who is absent three full days without a valid excuse, or on three occasions is tardy or absent for more than thirty minutes, or any combination thereof, is a truant. (E.C. 48260). <br><br>
+                <h5>Role of School Personnel</h5><br>
+                    
+                    On the first day of noted absence, a phone call home will be made to inquire about the child’s absence. Only the legal guardian/parent can give an oral verification of the child’s absence. Excused absences are illness – (specific illness must be documented), doctor/dental appointment, death of immediate relative. <br><br>
+                    
+                    If no parent is available to verify absence, a form note will be sent home for a parent to sign to verify the illness. <br><br>
+                    
+                    All verifications/reasons will be noted on the attendance record. <br><br>
+                    
+                    In the event that telephone numbers are disconnected, a new emergency card will be sent home with the child and parents must fill out correct telephone numbers.<br><br>
+                    
+                    If a child is absent more than three (3) consecutive days due to an illness, a doctor’s note will be required.<br><br>
+                    
+                    Students with excessive absences will be tracked and the school administration will send a letter to the parents informing them of the attendance issue.<br><br>
+                    
+                    After a student has missed more than 10 days of unexcused absences, the parent will be invited to an attendance meeting. Representatives from the District will be at the meeting. Parents will be informed of their responsibility to have children attend school on a regular basis. The office will then place this student on the attendance watch list.<br><br>
+                <h5>The Role of the Parent</h5><br>
+                    
+                    The legal parent/guardian will ensure that each child attends school on time every day.<br><br>
+                    
+                    If a student is absent, it is the responsibility of the parent to call the school or send a note to the teacher to report the absence.<br><br>
+                    
+                    It is the role of the parent to see that their child comes prepared to learn.<br><br>
+                <h5>Schoolwide Incentives</h5><br>
+                    
+                    Classes with the best monthly attendance will receive the Wizard Hat Trophy to display in their classroom for the month.<br><br>
+                    
+                    Individual students will receive perfect or excellent attendance awards at each quarterly awards assembly.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-calearning" role="tabpanel" aria-labelledby="v-pills-calearning-tab">
+                <h3>California Learning Standards</h3><br>
+                <p>
+                The Smarter Balanced Assessments will measure the full understanding of the State Standards in math and English language arts. 5th Graders will be assessed in Science as well.<br><br>
+
+                Students in grades 3-8 and grade 11 will take the assessments — all online, on electronic devices.<br><br>
+
+                The Smarter Balanced Assessments will be offered yearly, as well as interim assessments, based on State Standards to monitor student learning throughout the year and ensure all students are on-track for college and career readiness.<br><br>
+
+                The results of these new assessments will serve as a baseline for measuring our students’ understanding of the State Standards.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-covid" role="tabpanel" aria-labelledby="v-pills-covid-tab">
+                <h3>COVID-19</h3><br>
+                <p>
+                    The LAUSD has launched an initiative to provide COVID-19 testing to students, staff as well as family members of students and staff who test positive or show symptoms.<br><br>
+
+                <h5>Quick Guide: COVID-19 Testing Program</h5> <br>
+                    This Quick Guide provides a brief overview of the COVID-19 testing program.  The program is subject to change, and the processes and procedures described herein may be modified. Any changes will be shared in an updated Quick Guide. Please view a brief video that provides a comprehensive overview of the testing program.<br><br>
+                
+                <h5>Overview</h5> <br>
+                    Los Angeles Unified is implementing a program to provide the highest standard of safety measures at schools. The key components of the program include daily health checks, COVID-19 testing of students and staff, and community engagement to follow up on positive cases of COVID-19 and employees who may have been exposed or are not feeling well. Additionally, reporting procedures have been developed in accordance with the law to keep the school community informed of this testing and its results and of the District’s continued health mitigation measures.<br><br>
+
+                    See more on the LAUSD website.
+                    <div class="text-center">
+                    <a href="https://achieve.lausd.net/covidtesting" target="_blank"><button type="button" class="btn btn-outline-primary">Go to LAUSD</button></a>
+                    </div>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-dress" role="tabpanel" aria-labelledby="v-pills-dress-tab">
+                <h3>Dress Code & Rules</h3><br>
+                <p>
+                    LAUSD policy states that every school can adopt a uniform policy depending on the specific needs of the school. In 2004, a uniform policy was adopted by vote of the West Hollywood Elementary School Site Council to reinforce the school’s discipline efforts and provide increased safety and security to our students.<br><br>
+
+                    Our policy is that boys shall wear a white or navy blue collared shirt and navy blue pants or shorts. The pants or shorts should be appropriately belted around the waist. Girls shall wear a white or navy blue collared shirt and navy pants, shorts, skirts or jumpers. Jewelry should be appropriate with studs or very small hoops for earrings. Shoes should be closed toe and have a rubber sole. We ask all students to refrain from wearing hats and caps while indoors.<br><br>
+
+                    Uniforms may be purchased from the Friends of West Hollywood Elementary (FOWHE). The following is a list of inventory items we have available with logo’s.<br><br>
+
+                    Order logo shirts and sweaters from French Toast and use Source Code QS46P94.<br><br>
+
+                    Retail store that carry acceptable uniforms for our school are:  Target, Gap, Old Navy, and Lands End.<br><br>
+
+                    Please contact the school office for more information or assistance.<br><br>
+
+                <h5>Disciplinary Policy</h5><br>
+                    West Hollywood Elementary expects its students to attain developmentally appropriate academic, social, emotional and problem-solving skills. A step in that direction is our school’s discipline policy.<br><br>
+
+                    By following the plan, students will find that the climate of our school will be one of mutual respect, where students can learn to accept and work with students and staff members of many diverse backgrounds.<br><br>
+
+                <h5>School Rules</h5><br>
+                    In order for your child to do his/her best, the parents and the school must work together. With discipline and self-control, your child can be successful and enjoy school. <br><br>
+                    <ol type="1">
+                        <li>Be kind</li>
+                        <li>Be responsible</li>
+                        <li>Be respectful</li>
+                        <li>Always be safe</li>
+                    </ol><br>
+                <h5>Consequences</h5><br>
+                    If students choose not to follow the discipline policy outlined above, the following consequences will be applied:<br><br>
+                    <ul>
+                        <li>Teacher and student conference.</li>
+                        <li>Teacher and student conference with a note sent home for parents’ signature.</li>
+                        <li>Teacher, parent and student conference to develop a plan of action.</li>
+                        <li>The student will be referred to the office to conference with the principal</li>
+                        <li>Teacher, parent, student and principal will conference.</li>
+                    </ul><br>
+                <h5>Suspensions/Expulsions </h5><br>
+                    The Los Angeles Unified School District has a zero tolerance policy, which will lead to an automatic recommendation for expulsion for the following acts: <br><br>
+                    <ul>
+                        <li>Possession of firearms</li>
+                        <li>Brandishing knives</li>
+                        <li>Sale of drugs</li>
+                        <li>Sale of drugs</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-enroll" role="tabpanel" aria-labelledby="v-pills-enroll-tab">
+                <h3>Enrollment & Registration</h3><br>
+                <p>
+                    Presently, elementary school age children residing within West Hollywood Elementary home school district may enroll at the school. For kindergarten, students must turn five on or before December 2 of the year of registration.<br><br>
+
+                    To enroll your child, you will need to present:<br>
+                    <ul>
+                        <li>Identification: Birth certificate, baptismal certificate, passport or other legal document that has your child’s birth date.</li>
+                        <li>Immunization Record Card</li>
+                        <li>Proof of residency (Home School only): A utility bill (water, gas or electric) or property tax bill (no phone bills).</li>
+                    </ul><br>
+                <h5>Open Enrollment Admission</h5>
+                    Open Enrollment is a state-mandated policy allowing students to transfer to any school in the Los Angeles Unified School District (LAUSD) that has available space. Applications for open enrollment begin on May 4, 2020 and continue for three weeks. Open Enrollment applications can be completed online here.<br><br>
+                    <div class="marginleft20 container">
+                        <div class="row">
+                            <div class="col-md-9">
+                            Open Enrollment application period begins <br>
+                            On-time application deadline <br>
+                            Late application period <br><br>
+                            Enrollment Transfer applications, if Open Enrollment space remains 
+                            </div>
+                            <div class="col-md-3 light">
+                                May 4, 2020 <br>
+                                May 22, 2020 <br>
+                                June 9 to September 17, 2020 <br>
+                                September 17, 2020
+                            </div>
+                        </div>
+                    </div><br>
+                    After the Open Enrollment period closes, schools with more applications than seats available will have a waiting list. Siblings need to complete one application per child, however if one siblings name is taken from the waiting list, then all siblings who applied are eligible for transfer.  Open Enrollment transfers are valid until a student completes the final grade level at the school where the transfer is granted. For schools with remaining seats available, open enrollment continues until September. Once the September deadline has passed, no new applications are accepted for the school year.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-parking" role="tabpanel" aria-labelledby="v-pills-covid-parking">
+                <h3>Parking</h3><br>
+                <p>
+                    <span class="bold"> DO </span>pull up to the Parent Volunteer  School Safety Guards and they will let your children out of the car.<span class="bold"> Please stay in the car!!!</span><br><br>
+
+                    <span class="bold">DO </span>have your child unbuckle their seat belt  when the car stops.<br><br>
+
+                    <span class="bold">DO NOT </span>cut into the drop off line.  This is a single lane that moves quickly.<br><br>
+
+                    <span class="bold">DO NOT </span> double park your car to let your children out of the car.  This is a major safety hazard for your children.<br><br>
+
+                    Once your child has exited the car, DRIVE OFF.  Please exercise caution wen pulling into traffic. <br><br>
+
+                    <span class="bold">We request your cooperation in parking legally at arrival and dismissal. </span><br><br>
+
+                    <span class="bold">Double parking creates a safety hazard for all.  Please be courteous to our neighbors.  Do not block driveways.</span><br><br>
+
+                    Morning gate accessibility to drop your children off at school is as follows:<br><br>
+                    <div class="marginlefy20">
+                    The Stop and Drop Valet program is available on Hammond northbound from Cynthia.<br><br>
+
+                    The front has NO PARKING for the morning hours and limited parking after 10am.<br><br>
+
+                    There is no student drop off in parking lots.<br><br>
+
+                    Parents not using Stop and Drop and/or walking children onto campus should find street parking and escort the children through the front entrance of the school on Hammond or the pedestrian gate on Harratt.<br><br>
+
+                    Both gates are locked at 3:15pm. The Hammond gate will be open for pedestrian access only.<br><br>
+                    </div>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-staff" role="tabpanel" aria-labelledby="v-pills-staff-tab">
+                <h3>Teachers & Staff</h3><br>
+                <h5>Dr. Lehmann </h5>
+                <h6 class="text-muted">Principal</h6>
+                <p>
+                    We will continue to engage in “Growth Mindset” as a form of support while students encounter new problems to solve and challenges to overcome. We will continue to focus on our theme of kindness, encouraging our students to be positive and supportive as a school community learning together. We will include a focus on equity, empathy, and caring for one another as a reflection of current events and global citizenry.<br><br>
+
+                    We will focus on the core academic areas, intervention to close gaps in learning as a result of school closures, and we will continue to explore the arts and enrichments that our school community values.<br><br>
+
+                    As your principal, it is important to me that everyone who steps through our virtual classroom doors – teachers, students, and parents – feel welcome, excited, and inspired to be here! This attitude enables us to meet the challenges of academic excellence in a positive, fun, and nurturing environment. Together we will continue to move West Hollywood Elementary School and its students through a positive present and toward a strong future.<br><br>
+                <h4>Teachers</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5>Josabel Holgado-Paredes</h5>
+                                    <h6 class="text-muted">Kindergarten Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Carmen Marsh-Weiss</h5>
+                                    <h6 class="text-muted">Kindergarten Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Patricia O'Connor</h5>
+                                    <h6 class="text-muted">Kindergarten Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Erica Grech</h5>
+                                    <h6 class="text-muted">1st Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Joanna Parker</h5>
+                                    <h6 class="text-muted">1st Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Amanda McCormack</h5>
+                                    <h6 class="text-muted">1st Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Mr. Alberson</h5>
+                                    <h6 class="text-muted">Art Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5>Jennifer Chun</h5>
+                                    <h6 class="text-muted">2nd Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Jordi Iwamizu</h5>
+                                    <h6 class="text-muted">2nd Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Juliet Melzer</h5>
+                                    <h6 class="text-muted">2nd Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Marvin Acosta</h5>
+                                    <h6 class="text-muted">3rd Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Michelle Levy</h5>
+                                    <h6 class="text-muted">3rd Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Rachel Pando</h5>
+                                    <h6 class="text-muted">3rd Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Mark Rowell</h5>
+                                    <h6 class="text-muted">Special Education Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5>Kyle Baxendale</h5>
+                                    <h6 class="text-muted">4th Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Maya Schaeffer</h5>
+                                    <h6 class="text-muted">4th Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Michael Norr</h5>
+                                    <h6 class="text-muted">5th Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Mathew Page</h5>
+                                    <h6 class="text-muted">5th Grade Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Robert Felt</h5>
+                                    <h6 class="text-muted">Physical Education Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Mr. Carney</h5>
+                                    <h6 class="text-muted">Music Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Ms. Yoshida</h5>
+                                    <h6 class="text-muted">Music Teacher</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> <br>
+                <h4>Administration</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5>Mrs. Burns Buchanan</h5>
+                            <h6 class="text-muted">APEIS</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Mr. Benda</h5>
+                            <h6 class="text-muted">Mr. Benda</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Ms. Ovsanna </h5>
+                            <h6 class="text-muted">School Administrative Assistant</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Ms. Ruby</h5>
+                            <h6 class="text-muted">Office Assistant</h6>
+                        </div>
+                    </div>
+                </div> <br>
+                <h4>Campus</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div>
+                                <h5>Mr. Frelow</h5>
+                                <h6 class="text-muted">Plant Manager</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Mercedes</h5>
+                                <h6 class="text-muted">Cafeteria Manager</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Kristie </h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Sally </h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Isabel </h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <h5>Ms. Rebecca</h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Mr. McClary </h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Catherine</h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Karen</h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Mr. Mike</h5>
+                                <h6 class="text-muted">Instructional Aide</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <h5>Mr. Edward </h5>
+                                <h6 class="text-muted">Supervision Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Nancy</h5>
+                                <h6 class="text-muted">Supervision Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Mr.Taylor</h5>
+                                <h6 class="text-muted">Campus Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Mr. Vince</h5>
+                                <h6 class="text-muted">Campus Aide</h6>
+                            </div>
+                            <div>
+                                <h5>Mr. Morales </h5>
+                                <h6 class="text-muted">Instructional Aide RSP</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <h5>Ms. D</h5>
+                                <h6 class="text-muted">Instructional Aide RSP</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Dolores</h5>
+                                <h6 class="text-muted">Instructional Aide RSP</h6>
+                            </div>
+                            <div>
+                                <h5>Mr. Cris </h5>
+                                <h6 class="text-muted">IT Site Support</h6>
+                            </div>
+                            <div>
+                                <h5>Ms. Galgana</h5>
+                                <h6 class="text-muted">Instructional Technology Coach</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+<!--footer-->
+<div>
+    <div id="footer">
+      <div class="footerAddy">
+        <div>
+          <img src="./images/wizard-logo.png" alt="">
+        </div>
+        <div>
+          <h5>West Hollywood Elementary</h5>
+          <p>970 Hammond St.<br/>West Hollywood, California 90069</p>
+        </div>
+      </div>
+      <div id="footerSocial">
+          <h6>Follow Us</h6>
+          <div class="socialIcons">
+            <a href="https://twitter.com/WestHollywoodE1"><img src="./images/Twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/whewizards/"><img src="./images/Insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/WeHoElementary/"><img src="./images/facebook.png" alt="Facebook"></a>
+          </div>
+      </div>
+    </div>
+  </div>
+<!--script-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

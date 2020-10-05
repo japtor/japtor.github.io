@@ -1,0 +1,202 @@
+/*text*/
+h1, h2, h3, h4, h5 {font-family: 'Quicksand', sans-serif;}
+body, a, .card-subtitle {font-family: 'Montserrat', sans-serif;}
+/*background*/
+body {background-color: #F8F8F8;}
+/*nav*/
+.purpledivider {
+    color: #7E82F9;
+    font-weight: 700;
+    margin-right: 10px;
+}
+nav {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.wizard-logo {
+    width: 175px;
+}
+/*hero*/
+.bg-lightblue {
+    background-color: #7E82F9;
+}
+.heroruler-bottom {
+    padding-top: 20px;
+    color: white;
+    text-align: end;
+}
+.herotxt {
+    margin-right: 10%;
+}
+.ruler {
+    background-image: url("../images/footer-ruler.png");
+    background-repeat: repeat-x;
+    background-position: 3px bottom;
+    margin-bottom: 0;
+    height: 50px;
+}
+.carousel-caption {
+    background-color: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.carousel-caption p,.carousel-caption h5 {
+    color: #5457af;
+}
+
+/*
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }  */
+/*dailychallenge*/
+.bg-challengesquare {
+    background-image: url(../images/bgchallengesquare.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+}
+.challengebookmark img {
+    width: 100%;
+}
+/*margins*/
+.containermargintop {
+    margin-top: 30px;
+}
+/*mentoring*/
+.mentortxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.challengebookmark img, .mentorbookmark img, .mentorimg img, .eventimg img{
+    width: 100%;
+}
+.mentorimg {
+    display: flex;
+    align-items: center;
+}
+/*covid*/
+.bg-covidsquare {
+    background-image: url(../images/bgcovidsquare.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-covidsquare img, .mentorimg img {
+    border-radius: 5px;
+}
+/*events*/
+.calendarcardshadow:hover  {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.15);
+}
+/*footer (yes this code is garbage)*/
+#footer {
+    height: auto;
+    background-color: #7E82F9;
+    background-image: url("../images/footer-ruler.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 1rem 5% 50px 10%;
+    margin-top: 1em;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #footer h3, #footer p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  #footer p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .footerAddy {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footerAddy img {
+    height: 5rem;
+  }
+  
+  .footerAddy>div, #footerSocial {
+    padding: .5rem;
+  }
+  
+  #footerSocial {
+    text-align: center;
+  }
+  
+  #footerSocial img {
+    padding: .25rem;
+    width: 35px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+/*Media 
+@media (min-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .bg-challengesquare {
+        background-position: center;
+        background-size: contain;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+    .challengebookmark, .mentorbookmark, .covidbookmark {
+        transform: rotate(90deg);
+    }
+    .containermargintop {
+        margin-top: 10px;
+    }
+    .mentorbookmark img {
+        width: 80%;
+    }
+    .mentortxt {
+        text-align: center;
+    }
+    .covidbookmark {
+        margin-top: 30%;
+    }
+    .bg-covidsquare {
+        background-size: contain;
+    }
+}
+*/
+

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>West Hollywood Elementary</title>
+</head>
+<body>
+<!--navigation-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="d-flex flex-grow-1">
+        <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+            <img src="images/wizard-logo-drk.png" alt="wizard logo" class="wizard-logo">
+        </a>
+        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
+            <img src="images/wizard-logo-drk-mobile.png" alt="logo">
+        </a>
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="ourschool.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Our School
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="ourschool.html">About</a>
+                  <a class="dropdown-item" href="#">Attendance</a>
+                  <a class="dropdown-item" href="#">California Learning Standards</a>
+                  <a class="dropdown-item" href="#">COVID-19</a>
+                  <a class="dropdown-item" href="#">Dress Code and Rules</a>
+                  <a class="dropdown-item" href="#">Enrollment and Registration</a>
+                  <a class="dropdown-item" href="#">Parking</a>
+                  <a class="dropdown-item" href="#">Teachers and Staff</a>  
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Programs
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">COVID-19 Challenges</a>
+                    <a class="dropdown-item" href="#">Gardening</a>
+                    <a class="dropdown-item" href="#">GATE/SPED</a>
+                    <a class="dropdown-item" href="#">Music</a>
+                    <a class="dropdown-item" href="#">Physical Education</a>
+                    <a class="dropdown-item" href="#">Visual Arts</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="parentresources.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Parent Resources
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Common Core</a>
+                    <a class="dropdown-item" href="#">Friends of WHE</a>
+                    <a class="dropdown-item" href="#">News and Alerts</a>
+                    <a class="dropdown-item" href="#">Parent Portal</a>
+                    <a class="dropdown-item" href="#">Principal’s Newsletter</a>
+                    <a class="dropdown-item" href="#">School Site Council</a>
+                    <a class="dropdown-item" href="learninghub.html">Virtual Learning Hub</a>
+                  </div>
+                </li>
+        </ul>
+    </div>
+    <div class="purpledivider">
+        |
+    </div>
+    <!--calendar icon-->
+    <a class="navbar-brand" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+      </svg> 
+    </a>
+    <!--search icon-->
+    <a class="navbar-brand" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+    </svg> 
+    </a>
+</nav>
+<!--hero-->
+<div class="container bg-hero">
+    <div class="row no-gutters">
+        <div class="col-lg-2 bg-lightblue" data-aos="fade-up"></div>
+        <div class="col-12 col-lg-10" data-aos="fade-up">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/hero1.png" class="d-block w-100" alt="virtual learning">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Virtual Learning Hub & Extra Mentoring</h2>
+                      <a href="learninghub.html"> <button type="button" class="btn btn-warning">Visit Now</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/hero2.png" class="d-block w-100" alt="virtual talent show">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Virtual Talent Show</h2>
+                      <button type="button" class="btn btn-warning">Sign Up</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/hero3.png" class="d-block w-100" alt="covid update">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Get COVID-19 Text Updates</h2>
+                      <button type="button" class="btn btn-warning">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="heroruler-bottom bg-lightblue">
+        <div class="herotxt">
+            <h3 data-aos="slide-left">Welcome to West Hollywood</h3>
+            <h1 data-aos="slide-left" data-aos-offset="50">Elementary</h1>
+        </div>
+        <div class="ruler">
+        </div>
+    </div>
+</div>
+<!--daily challenge-->
+<div class="container containermargintop">
+  <div class="row align-items-center dailychallenge">
+      <div class="card-deck challengebookmark .card-columns">
+        <img src="images/challengebookmark.png" alt="daily challenges" data-aos="slide-up">
+      </div>
+      <div class="col-12 col-lg-9 bg-challengesquare">
+        <div class="row">
+          <div class="card-deck">
+            <div class="card text-center" data-aos="slide-up">
+              <img src="images/dailychallenge1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">GET MOVING!</h5>
+                <p class="card-subtitle mb-2 text-muted">Share your fitness at home by uploading your daily challenge video.</p>
+                <a href="#" class="btn btn-outline-info">Share Video</a>
+              </div>
+            </div>
+            <div class="card text-center" data-aos="slide-up">
+              <img src="images/dailychallenge2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">GET CREATIVE!</h5>
+                <p class="card-subtitle mb-2 text-muted">Share your artwork by uploading your daily challenge photo.</p>
+                <a href="#" class="btn btn-outline-info">Share Artwork</a>
+              </div>
+            </div>
+            <div class="card text-center" data-aos="slide-up">
+              <img src="images/dailychallenge3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">GET SOCIAL!</h5>
+                <p class="card-subtitle mb-2 text-muted">Play games with classmates.</p>
+                <a href="#" class="btn btn-outline-info">Let's Hang!</a>
+              </div>
+            </div>  
+          </div>
+        </div>  
+      </div>
+  </div>
+</div>
+<!--extra mentoring-->
+<div class="container containermargintop">
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-4 mentortxt">
+            <h2 data-aos="fade-up">Visit the Virtual Learning & Mentoring Hub</h2>
+            <p data-aos="fade-up">Teaching resources and more!</p>
+            <a href="learninghub.html" class="btn btn-outline-warning" data-aos="fade-up">Visit Now</a>
+        </div>
+        <div class="col-6 col-lg-3 mentorbookmark">
+          <img src="images/mentoringbookmark.png" alt="Extra Mentoring">
+        </div>
+        <div class="col-6 col-lg-5 mentorimg" data-aos="slide-left">
+          <img src="images/mentoring.png" alt="mentoring">
+        </div>
+    </div>
+</div>
+<!--covid-19-->
+<div class="container containermargintop">
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-4 covidbookmark">
+            <img src="images/covidbookmark.png" alt="covid-19 resources" data-aos="slide-right">
+        </div>
+        <div class="col-12 col-lg-8 bg-covidsquare">
+            <h2 data-aos="fade-up">Grab and Go Meals</h2>
+            <p data-aos="fade-up">breakfast and lunch available 7-10AM</p>
+            <img src="images/grabngo.jpg" width="60%" alt="lunch bag to go" data-aos="fade-up">
+        </div>
+    </div>
+</div>
+<!--upcoming-->
+<div class="container containermargintop">
+    <div class="row bgcalendarsquare align-items-center">
+        <div class="card-deck">
+
+            <div class="card text-center calendarcardshadow" data-aos="flip-up">
+                <img src="images/conference.png" class="card-img-top" alt="parent conference">
+                <div class="card-body">
+                    <h5 class="card-title">PARENT CONFERENCE</h5>
+                    <p class="card-subtitle mb-2 text-muted">How to support virtual learning at home.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Oct. 6</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary">See More</button>
+                </div>
+            </div>
+
+            <div class="card text-center calendarcardshadow" data-aos="flip-up">
+                <img src="images/halloween.png" alt="halloween pumpkins" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">VIRTUAL COSTUME CONTEST</h5>
+                    <p class="card-subtitle mb-2 text-muted">Put on your best costume.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Oct.31</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary">See More</button>
+                </div>
+            </div>
+
+            <div class="card text-center calendarcardshadow" data-aos="flip-up">
+                <img src="images/holiday.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">WINTER BREAK</h5>
+                    <p class="card-subtitle mb-2 text-muted">Take advantage of time off to spend with loved ones.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Nov. 15-30</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary">See More</button>
+                </div>
+            </div>
+            <div class="eventimg">
+              <img src="images/eventsbookmark.png" alt="Upcoming Events" data-aos="slide-left">
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div>
+  <div id="footer">
+    <div class="footerAddy">
+      <div>
+        <img src="./images/wizard-logo.png" alt="">
+      </div>
+      <div>
+        <h5>West Hollywood Elementary</h5>
+        <p>970 Hammond St.<br/>West Hollywood, California 90069</p>
+      </div>
+    </div>
+    <div id="footerSocial">
+        <h6>Follow Us</h6>
+        <div class="socialIcons">
+          <a href="https://twitter.com/WestHollywoodE1"><img src="./images/Twitter.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/whewizards/"><img src="./images/Insta.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/WeHoElementary/"><img src="./images/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+  </div>
+</div>
+<!--script-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

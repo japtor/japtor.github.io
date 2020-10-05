@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/ourschool.css">
+    <title>W. Hollywood Elementary | Our School</title>
+</head>
+<body>
+<!--navigation-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="d-flex flex-grow-1">
+            <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+                <img src="images/wizard-logo-drk.png" alt="wizard logo" class="wizard-logo">
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
+                <img src="images/wizard-logo-drk-mobile.png" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="ourschool.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Our School
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#v-pills-about-tab">About</a>
+                      <a class="dropdown-item" href="#v-pills-attendance-tab">Attendance</a>
+                      <a class="dropdown-item" href="#v-pills-calearning-tab">California Learning Standards</a>
+                      <a class="dropdown-item" href="#v-pills-covid-tab">COVID-19</a>
+                      <a class="dropdown-item" href="#v-pills-dress-tab">Dress Code and Rules</a>
+                      <a class="dropdown-item" href="#v-pills-enroll-tab">Enrollment and Registration</a>
+                      <a class="dropdown-item" href="#v-pills-parking-tab">Parking</a>
+                      <a class="dropdown-item" href="#v-pills-staff-tab">Teachers and Staff</a>  
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Programs
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">COVID-19 Challenges</a>
+                        <a class="dropdown-item" href="#">Gardening</a>
+                        <a class="dropdown-item" href="#">GATE/SPED</a>
+                        <a class="dropdown-item" href="#">Music</a>
+                        <a class="dropdown-item" href="#">Physical Education</a>
+                        <a class="dropdown-item" href="#">Visual Arts</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="parentresources.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Parent Resources
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#v-pills-common-tab">Common Core</a>
+                        <a class="dropdown-item" href="#v-pills-friends-tab">Friends of WHE</a>
+                        <a class="dropdown-item" href="#v-pills-news-tab">News and Alerts</a>
+                        <a class="dropdown-item" href="#v-pills-parent-tab">Parent Portal</a>
+                        <a class="dropdown-item" href="#v-pills-council-tab">School Site Council</a>
+                        <a class="dropdown-item" href="#v-pills-hub-tab">Virtual Learning Hub</a>
+                      </div>
+                    </li>
+            </ul>
+        </div>
+        <div class="purpledivider">
+            |
+        </div>
+        <!--calendar icon-->
+        <a class="navbar-brand" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+          </svg> 
+        </a>
+        <!--search icon-->
+        <a class="navbar-brand" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+        </svg> 
+        </a>
+</nav>
+<!--breadcrumbs-->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Parent Resources</li>
+    </ol>
+  </nav>
+<!--body columns 2 & 10-->
+<!--col 2: vertical nav-->
+<div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-common-tab" data-toggle="pill" href="#v-pills-common" role="tab" aria-controls="v-pills-common" aria-selected="true">Common Core</a>
+            <a class="nav-link" id="v-pills-friends-tab" data-toggle="pill" href="#v-pills-friends" role="tab" aria-controls="v-pills-friends" aria-selected="false">Friends of WHE</a>
+            <a class="nav-link" id="v-pills-news-tab" data-toggle="pill" href="#v-pills-news" role="tab" aria-controls="v-pills-news" aria-selected="false">News & Alerts</a>
+            <a class="nav-link" id="v-pills-parent-tab" data-toggle="pill" href="#v-pills-parent" role="tab" aria-controls="v-pills-parent" aria-selected="false">Parent Portal</a>
+            <a class="nav-link" id="v-pills-counsil-tab" data-toggle="pill" href="#v-pills-counsil" role="tab" aria-controls="v-pills-counsil" aria-selected="false">School Site Council</a>
+            <a class="nav-link" id="v-pills-hub-tab" data-toggle="pill" href="#v-pills-hub" role="tab" aria-controls="v-pills-hub" aria-selected="false">Virtual Learning Hub</a>
+          </div>
+      </div>
+      <!--col 10-->
+      <div class="col-md-9">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-common" role="tabpanel" aria-labelledby="v-pills-common-tab">
+                <h3>Common Core Math Overview</h3><br>
+                <a href="https://1.cdn.edl.io/DG9s3eTrnbWs5Y9iux7DL8uExy3thcuAEQ6B9zLYj3rXspAo.pdf" target="_blank"><p>WHE-Parent-CCSS-Training-2414</p></a><br>
+                <h5>Common Core State Standards (CCSS)</h5> <br>
+                <a href="https://1.cdn.edl.io/DG9s3eTrnbWs5Y9iux7DL8uExy3thcuAEQ6B9zLYj3rXspAo.pdf" target="_blank"><p>Brochure for Parents K-2</p></a><br>
+                <a href="https://1.cdn.edl.io/DG9s3eTrnbWs5Y9iux7DL8uExy3thcuAEQ6B9zLYj3rXspAo.pdf" target="_blank"><p>Brochure for Parents 3-5﻿</p></a><br>
+                <a href="https://1.cdn.edl.io/DG9s3eTrnbWs5Y9iux7DL8uExy3thcuAEQ6B9zLYj3rXspAo.pdf" target="_blank"><p>Brochure for Parents K-2</p></a><br>
+                <a href="https://1.cdn.edl.io/DG9s3eTrnbWs5Y9iux7DL8uExy3thcuAEQ6B9zLYj3rXspAo.pdf" target="_blank"><p> Brochure for Parents 3-5</p></a><br>
+            </div>
+            <div class="tab-pane fade" id="v-pills-friends" role="tabpanel" aria-labelledby="v-pills-friends-tab">
+                <h3>Friends of West Hollywood Elementary School</h3><br>
+                <p> 
+                    All students between the ages of 6 and 18 must attend school daily. Parents or guardians are responsible for sending their children to school (E.C. 48200).<br><br>
+                    FOWHE is Friends of West Hollywood Elementary, a parent volunteer 501(c)(3) fundraising organization that supports the educational programs for our students at West Hollywood Elementary.<br><br>
+
+                    FOWHE is dedicated to a well-rounded education that enriches and empowers the student body at West Hollywood Elementary. Our mission is to work in partnership with West Hollywood Elementary Administration and teachers to sustain a culture of academic excellence, student enrichment and personal growth.<br><br>
+
+                    FOWHE raises funds each year to ensure West Hollywood Elementary has vital programs for students not budgeted for by LAUSD.  The revenue FOWHE raises pays for programs including Music and Arts, Instructional Technology and Equipment, Teacher Aides, PE, Field Trips, Enrichments and Assemblies. These programs encourage our student to be creative and innovative while providing additional support for our kids.<br><br>
+
+                    To fund these programs, we start at the beginning of school with our Annual Giving Campaign, and have several fundraising events throughout the year.  All parents at West Hollywood Elementary are a part of FOWHE, and we invite you to be a Friend and GIVE back to our school. <br><br>
+
+                    If you would like information on how you can contribute to your child’s elementary school experience by Donating or Volunteering, please contact a Board Member or a Committee Chair.<br><br>
+                    <div class="text-center">
+                    <a href="https://www.fowhe.org/" target="_blank"><button type="button" class="btn btn-outline-primary">Go to FOWE</button></a>
+                    </div>
+                </p>
+            </div>
+            <div class="tab-pane fade marginbottom100" id="v-pills-news" role="tabpanel" aria-labelledby="v-pills-news-tab">
+                <h3>News & Alerts</h3><br>
+                <p> Coming Soon</p>
+            </div>
+            <div class="tab-pane fade marginbottom100" id="v-pills-parent" role="tabpanel" aria-labelledby="v-pills-parent-tab">
+                <h3>Parent Portal</h3><br>
+                <p> Coming Soon</p>
+            </div>
+            <div class="tab-pane fade marginbottom100" id="v-pills-parent" role="tabpanel" aria-labelledby="v-pills-parent-tab">
+                <h3>School Site Council</h3><br>
+                <p> Coming Soon</p>
+            </div>
+            <div class="tab-pane fade marginbottom100" id="v-pills-hub" role="tabpanel" aria-labelledby="v-pills-hub-tab">
+                <h3>Virtual Learning Hub</h3><br>
+                <p> 
+                    Parents and student can use the virtual learning hub to communicate with teachers and review previous lessons<br><br>
+                    <div class="text-center">
+                    <a href="learninghub.html" target="_blank"><button type="button" class="btn btn-outline-primary">Open Virtual Learning Hub</button></a>
+                    </div>
+                </p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+<!--footer-->
+<div>
+    <div id="footer">
+      <div class="footerAddy">
+        <div>
+          <img src="./images/wizard-logo.png" alt="">
+        </div>
+        <div>
+          <h5>West Hollywood Elementary</h5>
+          <p>970 Hammond St.<br/>West Hollywood, California 90069</p>
+        </div>
+      </div>
+      <div id="footerSocial">
+          <h6>Follow Us</h6>
+          <div class="socialIcons">
+            <a href="https://twitter.com/WestHollywoodE1"><img src="./images/Twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/whewizards/"><img src="./images/Insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/WeHoElementary/"><img src="./images/facebook.png" alt="Facebook"></a>
+          </div>
+      </div>
+    </div>
+  </div>
+<!--script-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
